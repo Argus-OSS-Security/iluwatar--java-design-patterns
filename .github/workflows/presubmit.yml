@@ -5,12 +5,13 @@ permissions:
     pull-requests: write
     issues: write
 
-on:
-    pull_request_target:
-        types: [opened, synchronize]
-    pull_request_review_comment:
-        types: [created]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#     pull_request_target:
+#         types: [opened, synchronize]
+#     pull_request_review_comment:
+#         types: [created]
+# 
 jobs:
     review:
         runs-on: ubuntu-latest

@@ -1,9 +1,10 @@
 name: Java CI
 
-on:
-  push:
-    branches: [ master ]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches: [ master ]
+# 
 jobs:
 
   build-and-analyze:
